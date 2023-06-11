@@ -1,5 +1,5 @@
 import './style.css'
-import './topics/03-functions'
+import './topics/04-homework-types'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   Hola Mundo
