@@ -1,38 +1,11 @@
-interface AudioPlayer {
-    audioVolume: number;
-    songDuration: number;
-    song: string;
-    details: Details;
-}
+const dbz: string[] = ['Goku','Goku2','Goku3']
 
-interface Details {
-    author: string;
-    year: number;
-}
+console.error('Personaje 3: ', dbz[2] || 'No hay personaje');
 
-const audioPlayer: AudioPlayer = {
-    audioVolume: 100,
-    songDuration: 90,
-    song: "Linda song",
-    details: {
-        author: 'Linda author',
-        year: 2000,
-    }
-}
+// array destructuring
 
-console.log('Author: ', audioPlayer.details.author);
+const [ , , linda = 'not found']: string[] = ['Goku','Goku2','linda'];
 
-// destructuring
-
-const { 
-    song, 
-    audioVolume:volume,
-    details:{author}
-} = audioPlayer;
-
-console.log('Song: ', song);
-console.log('audioVolume: ', volume);
-console.log('audioVolume: ', author);
-
+console.log('Personaje 3: ', linda );
 
 export{};
