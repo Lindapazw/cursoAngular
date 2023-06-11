@@ -1,22 +1,25 @@
-function addNumbers(a: number, b: number){
-    return a + b;
+interface Character{
+    name: string;
+    hp: number;
+    showHp: () => void;
 }
 
-const addNumbersArrow = (a: number, b: number):string =>{
-    return (a + b).toString();
+const healCharacter = ( character: Character, amount: number) => {
+    character.hp += amount;
 }
 
-const result: string = addNumbers(1, 2).toString();
-const result2: string = addNumbersArrow(1, 2).toString();
+const Linda: Character ={
+    name: 'lindapazw',
+    hp:50,
+    showHp() {
+        console.log(`Puntos de vida ${this.hp}`);
+    },
 
-function multiply(num1: number, num2: number, base: number){
-    return num1 * base ;
+
 }
 
-console.log(result);
-console.log(result2);
-const multiplyResult = multiply(1,2,3);
+healCharacter( Linda,50);
+Linda.showHp();
 
-console.log(multiplyResult);
 
 export{};
