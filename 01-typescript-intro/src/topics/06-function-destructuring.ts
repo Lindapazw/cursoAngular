@@ -26,22 +26,22 @@ interface TaxCalculationOptions {
 function taxCalculator( options: TaxCalculationOptions ): number[] {
     let total = 0;
 
-    options.products.forEach(product => {
-        total += product.price;
+    options.products.forEach( ({price}) =>{
+        total += price;
     });
 
     return [total, total * options.tax];
 }
 
 const shoppingCard = [phone, tablet];
-const tax = 0.15;
 
-const result = taxCalculator({
+// Destructuring
+const [total, taxResult] = taxCalculator({
     products: shoppingCard,
-    tax: tax,
+    tax: 0.15,
 })
 
-console.log('Total es igual a: ', result[0]);
-console.log('Tax ', result[1]);
+console.log('Total es igual a: ',total);
+console.log('Tax ',taxResult);
 
 export{}
