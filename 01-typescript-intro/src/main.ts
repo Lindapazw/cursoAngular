@@ -1,5 +1,5 @@
 import './style.css'
-import './topics/04-homework-types'
+import './topics/05-basic-destructuring'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   Hola Mundo
