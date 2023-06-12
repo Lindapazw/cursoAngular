@@ -1,5 +1,5 @@
 import './style.css'
-import './topics/07-import-export'
+import './topics/08-classes'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   Hola Mundo
