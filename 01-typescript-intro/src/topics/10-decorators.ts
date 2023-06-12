@@ -1,6 +1,6 @@
 
-function classDecorator(
-    constructor: any
+function classDecorator<T extends {new (...args:any[]): {}}>(
+    constructor: T
 ){
     return class constructor{
         newProperty= 'new property';
@@ -19,6 +19,7 @@ export class SuperClass {
     }
 }
 
+// imprimo la deficinion de mi clase
 console.log( SuperClass);
 
 
