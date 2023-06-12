@@ -8,16 +8,20 @@ export class Person {
         {}
 }
 
-export class Hero extends Person {
+export class Hero {
+
     constructor(
         public alterEgo: String,
         public age: number,
         public realName: string,
+        public person: Person,
     ) {
-        super(realName, 'NY');
+        this.person = new Person(realName);
     }
 }
 
-const Iromnan = new Hero('Iroman', 45, 'tony');
+const John = new Person('John','NY');
+
+const Iromnan = new Hero('Iroman', 45, 'tony', John);
 
 console.log(Iromnan);
