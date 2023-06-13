@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
   public heroName: string[] = ['iroman', 'batman', 'hulk', 'spiderman'];
+  public deleteHero?: string;
+
+  removeLastHero(): void {
+    // const deleteHero = this.heroName.pop();
+    this.deleteHero = this.heroName.pop();
+  }
 }
