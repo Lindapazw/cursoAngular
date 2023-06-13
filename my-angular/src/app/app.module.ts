@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListComponent } from './dbz/components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

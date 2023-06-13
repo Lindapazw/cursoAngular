@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './heroes/hero/hero.component';
 import { ListComponent } from './list/list.component';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ListComponent } from './list/list.component';
   ],
   imports: [
     BrowserModule,
+    DbzModule
 
   ],
   providers: [],
