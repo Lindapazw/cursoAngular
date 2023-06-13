@@ -3,13 +3,16 @@
 <hr>
 
 <!-- como esta en false no se ve al principio -->
-<div *ngIf="deleteHero">
+<div *ngIf="deleteHero; else nothinWasDelete">
   <h3>Héroe borrado <small class="text-danger"> {{deleteHero}} </small></h3>
 </div>
 
-<h3 *ngIf="!deleteHero">No ha borrado nada.</h3>
+<ng-template #nothinWasDelete>
+  <h3 *ngIf="!deleteHero">No ha borrado nada.</h3>
+</ng-template>
 
 <button
+  *ngIf="heroName.length > 0"
   (click)="removeLastHero()"
   class="btn btn-outline-danger">
   Borrar útilmo heroe
