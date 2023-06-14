@@ -13,9 +13,9 @@ import { CounterModule } from './counter/components/counter/counter.module';
   ],
   imports: [
     BrowserModule,
-    DbzModule,
     HeroesModule,
-    CounterModule
+    CounterModule,
+    DbzModule
 
   ],
   providers: [],
