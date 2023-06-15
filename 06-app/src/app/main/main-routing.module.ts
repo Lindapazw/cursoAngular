@@ -18,7 +18,7 @@ const routes: Routes = [
       {path: 'edit/:id', component: NewPageComponent,},
       {path: 'list', component: ListPageComponent,},
       {path: ':id', component: MainPageComponent,},
-      {path: '**', redirectTo: 'list'},
+      {path: '**', redirectTo: 'list'}, // la posicion es importante
     ]
   }
 ];
