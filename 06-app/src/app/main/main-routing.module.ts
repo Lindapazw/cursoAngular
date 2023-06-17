@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // ruteo
-import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { LayoutPageComponents } from './pages/layout-page/layout-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
@@ -11,7 +11,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutPageComponent,
+    component: LayoutPageComponents,
     children: [
       {path: 'new-page', component: NewPageComponent,}, // rutas hijas
       {path: 'search', component: SearchPageComponent,},
