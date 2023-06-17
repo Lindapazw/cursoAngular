@@ -1,1 +1,28 @@
-<p>register works!</p>
+<div class="flex flex-column">
+  <h2>Registrate</h2>
+
+  <mat-form-field>
+    <mat-label>Usuario</mat-label>
+    <input type="text" matInput placeholder="Nombre de usuario">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Mail</mat-label>
+    <input type="email" matInput placeholder="Escribe tu email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Contraseña">
+  </mat-form-field>
+
+  <button mat-button mat-flat-button color="primary">
+    <mat-icon>save</mat-icon>
+    Ingresar
+  </button>
+
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/login">¿Ya tienes una cuenta?</a>
+  </div>
+</div>
+
