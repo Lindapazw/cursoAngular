@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutPageComponents,
-    children: [
+    children: [ // localhost:4200/main/ ...
       {path: 'new-page', component: NewPageComponent,}, // rutas hijas
       {path: 'search', component: SearchPageComponent,},
       {path: 'edit/:id', component: NewPageComponent,},
