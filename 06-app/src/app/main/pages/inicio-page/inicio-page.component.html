@@ -21,26 +21,21 @@
             <p>Tip: Utiliza el cambio de detección "OnPush" en tus componentes cuando sea posible. Esto ayuda a mejorar el rendimiento al reducir la frecuencia de las verificaciones de cambio en Angular.</p>
             <p>Al establecer el cambio de detección en "OnPush" en un componente, Angular solo volverá a evaluar y actualizar el componente cuando se produzcan cambios en sus entradas (@Input) o cuando se dispare un evento dentro del componente. Esto evita que se realicen verificaciones innecesarias en cada ciclo de detección de cambios y mejora el rendimiento de la aplicación.</p>
           </div>
-        </ng-template>
-        <!-- Scrollable modal -->
+        </ng-template> <!-- fin de modal -->
       </div>
       <div class="card-footer text-body-secondary text-center">
         2 days ago
       </div>
     </div>
-  </div>
-
-
+  </div> <!--fin de card -->
 
   <div class="col-md-3">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">ITR tips<span class="text-body-secondary">- Bootstrap </span></h5>
         <p class="card-text">Asegúrate de que estés utilizando la versión correcta de Bootstrap. Las clases y estilos pueden variar según la versión de Bootstrap que estés utilizando. Si estás siguiendo la documentación de una versión específica, verifica que coincida con la versión que estás utilizando.</p>
-
         <!-- boton -->
         <button class="btn btn-primary w-100 btn-itr" (click)="openModal(myModalContent)">Ver más</button>
-
         <!-- modal -->
         <ng-template #myModalContent>
           <div class="modal-header">
@@ -54,13 +49,12 @@
             <p>Aprovecha los componentes predefinidos de Bootstrap para agilizar el desarrollo. Bootstrap ofrece una amplia gama de componentes reutilizables, como botones, barras de navegación, tarjetas, formularios, entre otros. Utilizar estos componentes te ayudará a mantener un estilo coherente y ahorra tiempo de desarrollo.</p>
           </div>
         </ng-template>  <!-- fin de modal -->
-
       </div>
       <div class="card-footer text-body-secondary text-center">
         2 days ago
       </div>
     </div>
-  </div>
+  </div> <!--fin de card -->
 
   <div class="col-md-3">
     <div class="card">
@@ -73,7 +67,7 @@
         2 days ago
       </div>
     </div>
-  </div>
+  </div> <!--fin de card -->
 
   <div class="col-md-3">
     <div class="card">
@@ -86,23 +80,71 @@
         2 days ago
       </div>
     </div>
-  </div>
+  </div><!--fin de card -->
 </div>
 
 <h2 class="titulo m-3 fs-4">Últimas noticias de ITR</h2>
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
+<div>
+  <div class="row">
+
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <div class="card mb-3">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
       </div>
-    </div>
+    </div> <!--fin de card noticias -->
+
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> <!--fin de card noticias -->
+
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> <!--fin de card noticias -->
+
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> <!--fin de card noticias -->
+
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> <!--fin de card noticias -->
+
+    <!-- Agrega más tarjetas aquí -->
+
   </div>
 </div>
 
