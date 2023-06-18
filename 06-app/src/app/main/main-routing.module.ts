@@ -25,15 +25,15 @@ const routes: Routes = [
       {path: 'search', component: SearchPageComponent,},
       {path: 'edit/:id', component: NewPageComponent,},
       {path: 'list', component: ListPageComponent,},
-      {path: 'coach', component: CoachPageComponent,}, // coach
       {path: 'inicio', component: InicioPageComponent,}, // inicio
+      {path: 'coach', component: CoachPageComponent,}, // coach
       {path: 'rrhh', component: RrhhPageComponent,}, // rrhh
       {path: 'entrevistador', component: EntrevistadorPageComponent,}, // entrevistador
       {path: 'asignador', component: AsignadorPageComponent,}, // asignador
       {path: 'recurso', component: RecursoPageComponent,}, // recurso
       {path: 'departamento', component: DepartamentoPageComponent,}, // departamento
       {path: ':id', component: MainPageComponent,},
-      {path: '**', redirectTo: 'list'}, // la posicion es importante
+      {path: '**', redirectTo: 'inicio'}, // la posicion es importante
     ]
   }
 ];
