@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutPageComponents } from './pages/layout-page/layout-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
-import { ListPageComponent } from './pages/list-page/list-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 
 import { CoachPageComponent } from './pages/coach-page/coach-page.component';
@@ -24,7 +23,6 @@ const routes: Routes = [
       {path: 'new-page', component: NewPageComponent,}, // rutas hijas
       {path: 'search', component: SearchPageComponent,},
       {path: 'edit/:id', component: NewPageComponent,},
-      {path: 'list', component: ListPageComponent,},
       {path: 'inicio', component: InicioPageComponent,}, // inicio
       {path: 'coach', component: CoachPageComponent,}, // coach
       {path: 'rrhh', component: RrhhPageComponent,}, // rrhh
