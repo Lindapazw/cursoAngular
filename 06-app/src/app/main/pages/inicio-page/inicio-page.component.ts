@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-inicio-page',
@@ -6,4 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio-page.component.css']
 })
 export class InicioPageComponent {
+  constructor(public modalService: NgbModal) { }
+
+  openModal(content: any) {
+    const modalOptions: NgbModalOptions = {
+      scrollable: true
+    };
+
+    this.modalService.open(content, modalOptions);
+  }
 }
