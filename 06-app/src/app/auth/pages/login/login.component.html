@@ -3,15 +3,15 @@
 
   <mat-form-field>
     <mat-label>Usuario</mat-label>
-    <input type="text" matInput placeholder="Nombre de usuario">
+    <input type="text" matInput placeholder="Nombre de usuario" [(ngModel)]="email">
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña">
+    <input type="password" matInput placeholder="Contraseña" [(ngModel)]="password">
   </mat-form-field>
 
-  <a href="#" class="btn btn-primary">Ingresar</a>
+  <a [routerLink]="'/main'" class="btn btn-primary" (click)="login()">Ingresar</a>
 
   <div class="flex justify-content-end mt-5">
     <a routerLink="/auth/new-account">¿No tienes una cuenta?</a>
