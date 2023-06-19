@@ -2,24 +2,18 @@
   <h2 class="d-flex justify-content-center">Registrate</h2>
 
   <mat-form-field>
-    <mat-label>Usuario</mat-label>
-    <input type="text" matInput placeholder="Nombre de usuario">
-  </mat-form-field>
-
-  <mat-form-field>
     <mat-label>Mail</mat-label>
-    <input type="email" matInput placeholder="Escribe tu email">
+    <input type="email" matInput placeholder="Escribe tu email" [(ngModel)]="email">
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña">
+    <input type="password" matInput placeholder="Contraseña" [(ngModel)]="password">
   </mat-form-field>
 
-  <a href="#" class="btn btn-primary">Registrarse</a>
+  <a routerLink="/auth/login" class="btn btn-primary" (click)="register()">Registrarse</a>
 
   <div class="flex justify-content-end mt-5">
     <a routerLink="/auth/login">¿Ya tienes una cuenta?</a>
   </div>
 </div>
-

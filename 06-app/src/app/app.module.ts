@@ -18,7 +18,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 // service
-import { UserService } from './services/user.service';
+import { UserService } from './auth/pages/services/user.service';
 
 @NgModule({
   declarations: [

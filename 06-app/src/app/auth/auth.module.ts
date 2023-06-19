@@ -8,6 +8,7 @@ import { LayoutComponent } from './pages/layout/layout.component';
 
 // importamos el modulo de material
 import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     AuthRoutingModule,
+    FormsModule, // para authentication
     MaterialModule // material
   ]
 })
