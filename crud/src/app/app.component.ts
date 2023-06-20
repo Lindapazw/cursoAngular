@@ -13,5 +13,10 @@ export class AppComponent {
     { id: 3, name: 'Angel', country: 'United States'},
   ];
 
-  selectedEmployee: Employee = new Employee();
+  selectedEmployee: Employee = new Employee(); // insert employee and country
+
+  addOrEdit() { // button to add or edit
+    this.selectedEmployee.id = this.employeeArray.length + 1;
+    this.employeeArray.push(this.selectedEmployee);
+  }
 }
