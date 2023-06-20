@@ -21,7 +21,6 @@ export class AppComponent {
 
 
   addOrEdit() {
-
     if(this.selectedEmployee.id === 0){
       this.selectedEmployee.id = this.employeeArray.length + 1;
       this.employeeArray.push(this.selectedEmployee);
