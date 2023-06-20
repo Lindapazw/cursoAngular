@@ -30,7 +30,9 @@ export class AppComponent {
   }
 
   delete(){
-    this.employeeArray = this.employeeArray.filter(x => x != this.selectedEmployee);
-    this.selectedEmployee = new Employee(); // clean screen
+    if(confirm("Are you sure")) {
+      this.employeeArray = this.employeeArray.filter(x => x != this.selectedEmployee);
+      this.selectedEmployee = new Employee(); // clean screen
+    }
   }
 }
