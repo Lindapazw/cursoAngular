@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="body">
+  <div class="login">
+    <form [formGroup]="form" (ngSubmit)="ingresar()">
+      <img src="../assets/img/idea.png" alt="user" width="50%">
+      <h3 class="mb-4">login</h3>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input type="text" matInput autocomplete="off" formControlName="usuario">
+      </mat-form-field>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput autocomplete="off" ormControlName="password">
+      </mat-form-field>
+
+      <br>
+      <button type="submit" class="ancho" mat-raised-button color="primary" [disabled]="form.invalid">Ingresar</button>
+    </form>
+  </div>
+</div>
+
+
