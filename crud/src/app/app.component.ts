@@ -15,10 +15,22 @@ export class AppComponent {
 
   selectedEmployee: Employee = new Employee(); // insert employee and country
 
-  addOrEdit() { // button to add or edit
-    this.selectedEmployee.id = this.employeeArray.length + 1;
-    this.employeeArray.push(this.selectedEmployee);
+  openForEdit(employee: Employee){ // class.active
+    this.selectedEmployee = employee; // se llena el formulario con los datos
+  }
 
-    this.selectedEmployee = new Employee();
+
+  addOrEdit() {
+
+    if(this.selectedEmployee.id === 0){
+      this.selectedEmployee.id = this.employeeArray.length + 1;
+      this.employeeArray.push(this.selectedEmployee);
+    }
+    this.selectedEmployee = new Employee(); // clean screen
+  }
+
+  delete(){
+    this.employeeArray = this.employeeArray.filter(x => x != this.selectedEmployee);
+    this.selectedEmployee = new Employee(); // clean screen
   }
 }
