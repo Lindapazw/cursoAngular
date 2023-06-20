@@ -16,3 +16,7 @@
   max-height: 7em; /* Ajusta el valor según la cantidad de texto que deseas mostrar */
 }
 
+.idea {
+  top: -18px;
+  right: 10px;
+}
