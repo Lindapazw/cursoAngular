@@ -17,6 +17,8 @@ import { DepartamentoPageComponent } from './pages/departamento-page/departament
 
 // material
 import { MaterialModule } from '../material/material.module';
+import { TipsInicioComponent } from './pages/tips-inicio/tips-inicio.component';
+import { NoticiasInicioComponent } from './pages/noticias-inicio/noticias-inicio.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { MaterialModule } from '../material/material.module';
     CoachPageComponent,
     AsignadorPageComponent,
     RecursoPageComponent,
-    DepartamentoPageComponent
+    DepartamentoPageComponent,
+    TipsInicioComponent,
+    NoticiasInicioComponent
   ],
   imports: [
     CommonModule,
