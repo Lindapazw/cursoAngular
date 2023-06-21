@@ -18,6 +18,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 
 
@@ -43,7 +45,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatSnackBarModule,
     MatToolbarModule,
     MatTableModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class MaterialModule { }
