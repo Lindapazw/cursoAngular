@@ -1,3 +1,5 @@
+<h2 class="titulo m-3 fs-4">Listado de empleados</h2>
+
 <div class="px-6 py-4">
 
   <!-- filter -->
@@ -7,47 +9,47 @@
   </mat-form-field>
 
 <div class="mat-elevation-z5">
-  <table mat-table [dataSource]="dataSource">
+  <table mat-table [dataSource]="dataSource" matSort>
 
     <!-- Position Column -->
     <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
       <td mat-cell *matCellDef="let element"> {{element.position}} </td>
     </ng-container>
 
     <!-- nombre Column -->
     <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
       <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
     </ng-container>
 
     <!-- apellido Column -->
     <ng-container matColumnDef="apellido">
-      <th mat-header-cell *matHeaderCellDef> Apellido </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Apellido </th>
       <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
     </ng-container>
 
     <!-- dni Column -->
     <ng-container matColumnDef="dni">
-      <th mat-header-cell *matHeaderCellDef> DNI </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> DNI </th>
       <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
     </ng-container>
 
     <!-- role Column -->
     <ng-container matColumnDef="role">
-      <th mat-header-cell *matHeaderCellDef> Role </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Role </th>
       <td mat-cell *matCellDef="let element"> {{element.role}} </td>
     </ng-container>
 
     <!-- senority Column -->
     <ng-container matColumnDef="senority">
-      <th mat-header-cell *matHeaderCellDef> Senority </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Senority </th>
       <td mat-cell *matCellDef="let element"> {{element.senority}} </td>
     </ng-container>
 
     <!-- sex Column -->
     <ng-container matColumnDef="sex">
-      <th mat-header-cell *matHeaderCellDef> Sexo </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Sexo </th>
       <td mat-cell *matCellDef="let element"> {{element.sex}} </td>
     </ng-container>
 
