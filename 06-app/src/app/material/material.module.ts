@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -41,7 +42,8 @@ import {MatTableModule} from '@angular/material/table';
     MatSidenavModule,
     MatSnackBarModule,
     MatToolbarModule,
-    MatTableModule
+    MatTableModule,
+    MatTooltipModule
   ]
 })
 export class MaterialModule { }
