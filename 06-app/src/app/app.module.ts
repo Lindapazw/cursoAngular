@@ -19,6 +19,8 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 // service
 import { UserService } from './auth/pages/services/user.service';
+// http
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { UserService } from './auth/pages/services/user.service';
     MatIconModule,
     MatListModule,
     NgbModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
   ],
