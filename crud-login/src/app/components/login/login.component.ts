@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
 
   form: FormGroup;
 
@@ -16,10 +16,6 @@ export class LoginComponent implements OnInit {
       usuario: ['', Validators.required],
       password: ['', Validators.required],
     });
-  }
-
-  ngOnInit(): void {
-
   }
 
   ingresar(){
