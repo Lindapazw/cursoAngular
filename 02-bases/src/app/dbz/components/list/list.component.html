@@ -11,8 +11,10 @@
         let isOdd = odd;
         "
         class="list-group-item"
-        [ngClass]="{'list-group-item-action list-group-item-success': isLast}"
-        >
+        [ngClass]="{
+          'list-group-item-action list-group-item-dark': isEven,
+          'list-group-item-action list-group-item-light': isOdd,
+        }">
         <span>{{i + 1}}. </span>
         <span>{{ character.name}}</span>
         <strong> - Power</strong>
