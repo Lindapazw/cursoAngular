@@ -13,4 +13,5 @@ export class ListComponent {
     name: 'Goku',
     power: 1000,
   }]
+
 }
