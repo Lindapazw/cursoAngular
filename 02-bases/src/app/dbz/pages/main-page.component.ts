@@ -13,6 +13,9 @@ export class MainPageComponent {
   },{
     name: 'Gonza',
     power: 1,
+  },{
+    name: 'Abuela',
+    power: 2,
   }];
 
 }
