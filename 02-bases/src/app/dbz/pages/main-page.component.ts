@@ -21,4 +21,9 @@ export class MainPageComponent {
     power: 2,
   }];
 
+  onNewCharacter(character: Character):void{
+    console.log('MainPage');
+    console.log(character);
+  }
+
 }
