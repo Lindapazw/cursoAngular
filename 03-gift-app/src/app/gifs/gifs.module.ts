@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+    HomeComponent],
 })
 export class GifsModule { }
