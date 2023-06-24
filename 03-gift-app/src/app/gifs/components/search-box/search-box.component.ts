@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-box.component.css']
 })
 export class SearchBoxComponent {
+  constructor(){
 
+  }
+
+  searchTag( newTag: String) {
+    console.log({ newTag })
+  }
 }
