@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
   },
   {
+    path: 'alone',
+    loadComponent: () => import('./ALONE/alone-page/alone-page.component').then(m => m.AlonePageComponent),
+  },
+  {
     path: 'main',
     loadChildren: () => import('./main/main.module').then(m => m.MainModule),
   },
